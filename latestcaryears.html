@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twambimotors.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(219, 219, 219);
+}
+li a button{
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 7%;
+    background-color: #ffffff00;
+}
+.logo{
+    cursor: pointer;
+}
+.nav-links{
+list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+.nav-links li::after{
+  content:"";
+  height: 3px;
+  width: 0;
+  background:  #3f075f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.nav-links li:hover::after{
+  width: 100%;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: rgb(19, 41, 150);
+}
+.nav-links li a:hover{
+    color: #3f075f;
+}
+.nav-links li .active{
+  color: #3f075f;
+}
+button{
+    padding: 9px 25px;
+    color: white;
+    background-color: rgba(0, 136, 169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 136, 169,0.5)
+}
+.card{
+            width: 200px;
+            height: 210px;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            
+            margin: 10px 15px;
+            background-position: center;
+            background-size: cover;
+            transition: 0.5s;
+        }
+        .card1{
+            background-image: url(cat/b1.JPG);
+        }
+        .card2{
+            background-image: url(cat/b1.JPG);
+        }
+        .card3{
+            background-image: url(cat/b1.JPG);
+        }
+        .card4{
+            background-image: url(cat/b1.JPG);
+        }
+        .card:hover{
+            background-image: url(cat/b2.JPG);
+            width: 210px;
+            height: 220px;
+        }
+        h5{
+            color: rgb(0, 0, 0);
+            text-shadow: 0 0 5px #999;
+        }
+        .card p{color: rgb(0, 0, 0);
+            text-shadow: 0 0 15px rgb(236, 236, 236);
+            font-size: 10px;
+        }
+        .cars{
+            position: absolute;
+        }
+        .im{
+            position: relative;
+           margin-left:8% ;
+           margin-top: 65%;
+        }
+        .sublinks a{
+  text-decoration: none;
+  color: rgb(19, 41, 150);
+}
+.sublinks a:hover{
+  font-size:100%;
+  padding: 9px 25px;
+  background-color: rgba(11, 144, 177, 0.911);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.sublinks a.active{
+  font-size:100%;
+  padding: 9px 25px;
+  background-color: rgba(11, 144, 177, 0.911);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.subs{
+    display: inline-block;
+ padding: 1% 20px;
+}
+.subs a{
+    display: grid;
+}
+footer{
+    display: flex;
+    position: relative;
+    width: 100%;
+ bottom: 0%;
+    justify-content:center;
+    padding: 10px 7%;
+    background-color: rgba(12, 131, 161, 0.911);
+}
+.buttons{
+    display: flex;
+bottom: 0%;
+margin-left: 8%;
+
+}
+.buttons img{
+    width: auto;
+  height: 20px;
+}
+.buttons a{
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 4px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.buttons a:hover{
+    background-color: rgba(17, 103, 125, 0.53)
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="twmb.png" alt="KING" width="150" height="auto">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Category</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about us.html">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="contact us.html"><button>Login</button></a>
+    </header>
+    <center>
+        <font size='+3' color='purple'>
+        <a><b>Car Catalogue</b></a> </font>
+        <p><font size='+1.5' color='darkblue'>Explore out cars you might like!</font></p>
+    </center>
+    <center>
+        <div class="sublinks">
+            <div class="subs">
+            <a href="bestdetails.html" class="sub1">BEST DETAILS</a>
+            </div>
+    <div class="subs sub1">
+            <a href="allcars.html" class="sub1">ALL CARS</a>
+    </div>
+    <div class="subs sub1">
+            <a href="gallery.html" class="sub1">TOP RATED</a>
+    </div>
+    <div class="subs">
+        <a href="latestcaryears.html" style="color: white;"class="active">LATEST CAR YEAR</a>
+    </div>
+       </div>
+    </center>
+    <center>
+        <div class="col">
+            <div class="card card1">
+                <h5>FORD</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/fod2.png"width="150px" height="auto"> </div>
+<div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card2">
+                <h5>HILUX</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/ford3.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card3">
+                <h5>BENZ</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/benz.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PAJERO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/suv.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PRADO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/prado.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>NISSAN</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/nissan.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>MARK X</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/chevrelote3.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>MARK II</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/chevrolete2.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>CHEVRELOTE</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/chevrelote.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>HERRIA</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/suv.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>BMW</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="cars/bmw.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>RAV 4</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>KULUGA</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+            <div class="card card4">
+                <h5>PASSO</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="cars"><img src="carp.png"width="150px" height="auto"> </div>
+                <div class="im"><img src="icons/pic.png"width="30px" height="auto"></div>
+            </div>
+        </div>
+    </center>
+    <footer>
+         <p style="color: white;"><b>NB:</b>We Offer Profetional Drivers</p>
+         <div class="buttons">
+            <a class="cta" href="contact us.html"><img src="icons/tw.png"></a>
+            <a class="cta" href="contact us.html"><img src="icons/fb.png"></a>
+            <a class="cta" href="contact us.html"><img src="icons/g+.png"></a>
+           </div>
+    </footer>
+</body>
+</html>

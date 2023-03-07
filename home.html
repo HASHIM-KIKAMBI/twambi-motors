@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twambimotors.com</title>
+    <style>
+                *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        html{
+    scroll-behavior: smooth;
+}
+        .container{
+    width: 100%;
+    height: 100%;
+    }
+        body{
+            background-image: url(tof.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+background-repeat: no-repeat;
+        }header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 7%;
+    background-color: #ffffff00;
+}
+        li a button{
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.logo{
+    cursor: pointer;
+}
+.nav-links{
+list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+.nav-links li::after {
+  content:"";
+  height: 3px;
+  width: 0;
+  background:  #3f075f;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 0.5s;
+}
+.nav-links li:hover::after{
+  width: 100%;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: rgb(19, 41, 150);
+}
+.nav-links li a:hover {
+    color: #3f075f;
+}
+.nav-links li .active{
+  color: #3f075f;
+}
+.sub1{
+
+  list-style: none;
+  position: absolute;
+}
+.sub1 ul{
+  margin: 2px;
+}
+.sub1 ul li{
+  margin: 3px;
+}
+.click-me{
+                display: block;
+                width: 100px;
+                height: 40px;
+                background-color: rgba(0, 136, 169,1);
+                color: white;
+                text-align: center;
+                font-size: 15px;
+                line-height: 40px;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: .5s;
+            }
+            .click-me:hover{
+              background-color: rgba(0, 136, 169,0.5)
+            }
+
+.buttons{
+    display: flex;
+bottom: 0%;
+margin-left: 8%;
+
+}
+.buttons img{
+    width: auto;
+  height: 30px;
+}
+.buttons a{
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 4px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.buttons a:hover{
+    background-color: rgba(17, 103, 125, 0.53)
+}
+.detel{
+    margin-left: 8%;
+ margin-top: 8%;
+}
+.detel h3{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: -80%;
+}
+.detel a{
+ background:#391851;
+ padding: 10px 18px;
+ text-decoration: none;
+ font-weight: bold;
+ color: rgb(255, 255, 255);
+ display: inline-block;
+ margin:30px 0;
+ border-radius: 5px;
+}
+.detel a:hover{
+    background:#210436;
+}
+.car img{
+bottom: 1%;
+position: absolute;
+right: 40px;
+width: 55%;
+}
+.col{
+    margin-top: 10%;
+}
+.dits{
+    display: flex;
+}
+.dit{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.dit h5{
+color: #391851;
+font-weight: bolder;
+}
+.dit p{
+    color: black;
+    font-size: small;
+}
+
+
+
+
+.png{
+  width: auto;
+  height: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+span{
+  font-size: small;
+display: flex;
+justify-content: center;
+padding: 10px 0 10px 0;
+}
+h3{
+  font-size: 30px;
+display: flex;
+justify-content: center;
+padding: 10px 0 10px;
+}
+.input-field{
+display: flex;
+flex-direction: column;
+}
+.but{
+margin-left: -50px;
+}
+.input{
+  height: 40px;
+width: 83%;
+border: none;
+outline: none;
+margin-top: 5px;
+border-radius: 10px;
+padding: 5px 5px 5px 30px;
+background: rgba(0, 0, 0, 0.1);
+}
+i{
+  position: relative;
+top: -35px;
+left: -85px;
+}
+fieldset{
+  opacity: 0;
+visibility:hidden;
+position: absolute;
+transition: .3s ease-in-out;
+top:-3%;
+ right: 5%;
+border-radius: 30px;
+box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+background-color: rgba(155, 165, 176, 0.785);
+  padding: 10px 18px;
+  font-weight: bold;
+  display: inline-block;
+  margin:20px 0;
+  border-radius: 5px;
+  color: rgb(107, 14, 150);
+}
+fieldset .in{
+display: flex;
+flex-direction: column;
+}
+::-webkit-input-placeholder{
+  font-weight: bold;
+color: #3f075fa7;
+}
+.submit{
+background-color: rgba(0, 136, 169,1);
+  text-decoration: none;
+font-size: 15px;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+width: 60%;
+margin-top: 5px;
+  border-radius: 30px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+transition: .3s;
+}
+.submit:hover{
+  background-color: rgba(10, 72, 87, 0.623);
+  font-size: 17px;
+}
+.left label{
+  font-size: 11px;
+}
+.right label {
+  font-size: 14px;
+  position: relative;
+}
+.left label a{
+  color: #210436;
+text-decoration: none;
+}
+.right label a{
+  color: #210436;
+text-decoration: none;
+}
+.pngf{
+width: 6%;
+height: auto;
+}
+.box{
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+.contain{
+  width: 350px;
+  display: flex;
+flex-direction: column;
+padding: 2px 15px 2px 20px;
+}
+
+.fa-time{
+ color: #ffffff;
+font-size: 25px;
+font-weight: bold;
+cursor: pointer;
+}
+#click{
+  display: none;
+}
+.open-fieldset{
+  opacity: 1;
+visibility: visible;
+top: 5%;
+ right: 5%;
+transition: .3s ease-in;
+}
+.hea{
+  display: inline-block;
+    position: relative;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <img class="logo" src="twmb.png" alt="KING" width="150" height="auto">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="gallery.html">Category</a>
+                      <div class="sub1">
+                        <ul>
+                          <li><a href="bestdetails.html">BEST</a></li>
+                    <li><a href="allcars.html">ALL</a></li>
+                    <li><a href="gallery.html">TOP</a></li>
+                    <li><a href="latestcaryears.html">LATEST</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about us.html">About</a></li>
+                </ul>
+            </nav>
+            <input type="checkbox" id="click">
+            <label for="click" onclick="openfieldset()" class="click-me">Login</label>
+        </header>
+        <div class="detel">   <font size='+3.7' color='purple'>
+            <h3><b>FIND THE RIGHT<br>CAR FOR YOU</b></h3> </font>
+            <p>we provide the best car options and expert
+                <br>services foor the greatest customer experience
+            </p>
+                <a href="gallery.html">DISCOVER</a>
+            </div>
+
+            <div class="buttons">
+                <a class="cta" href="contact us.html"><img src="icons/tw.png"></a>
+                <a class="cta" href="contact us.html"><img src="icons/fb.png"></a>
+                <a class="cta" href="contact us.html"><img src="icons/g+.png"></a>
+
+            </div>
+     <center>
+        <div class="car"><img src="carp.png"></div>
+      </center>
+              <div class="box">
+              <div class="contain">
+              <fieldset class="fieldset" id="fieldset">
+                <div class="top-header">
+                  <center>
+                    <div class="hea">
+                      <label for="click" onclick="closefieldset()"  class="fas fa-time">X</label>
+                      <h3>Login</h3>
+                      </div>
+                  </center>
+                </div>
+              <CENTER>
+                <div class="in">
+                  <input type="text" class="input" placeholder="Email" name="email" required>
+              <i><img src="lock.png" class="pngf"></i>
+              <input type="password" class="input" placeholder="Password" name="password" required>
+              <i><img src="user.png" class="pngf"></i>
+                 </div>
+                 <div class="left">
+                  <label><a href="signup.html">Forgot Password?</a></label>
+                </div>
+                  <a href="home.html"><input type="submit" for="click" class="submit" value="Submit"></a>
+                  <div class="right">
+                    <label><a href="signup.html">Sign in</a></label>
+                    </div>
+              </CENTER>
+              </fieldset>
+              </div>
+              </div>
+ 
+</center>
+<div class="dits">
+    <div class="dit">
+        <h5>Production</h5>
+    <p>+256 741273938</p>
+    </div>
+    <div class="dit">
+        <h5>Designer</h5>
+    <p>Hashim kikambi</p>
+    </div>
+    
+</div>
+</div>
+<script>
+  let fieldset = document.getElementById("fieldset");
+
+function openfieldset(){
+  fieldset.classList.add("open-fieldset");
+}
+function closefieldset(){
+  fieldset.classList.remove("open-fieldset");
+}
+
+</script>
+</body>
+</html>

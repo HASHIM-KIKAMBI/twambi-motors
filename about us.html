@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twambimotors.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(219, 219, 219);
+}
+li a button{
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 7%;
+    background-color: #ffffff00;
+}
+.logo{
+    cursor: pointer;
+}
+.nav-links{
+list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+.nav-links li::after{
+  content:"";
+  height: 3px;
+  width: 0;
+  background:  #3f075f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.nav-links li:hover::after{
+  width: 100%;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: rgb(19, 41, 150);
+}
+.nav-links li a:hover{
+    color: #3f075f;
+}
+.nav-links li .active{
+  color: #3f075f;
+}
+button{
+    padding: 9px 25px;
+color: white;
+    background-color: rgba(0, 136, 169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 136, 169,0.5)
+}
+        .thecard{
+margin-top: 2%;
+margin-left: 2%;
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.thecard:hover{
+  transform: rotateY(180deg) rotatez(180deg);
+}
+.card1{
+background-image: url(hashf6ull.jpg);
+}
+.card2{
+background-image: url(suma.jpg);
+}
+.card3{
+background-image: url(geti.jpg);
+}
+.card4{
+background-image: url(twaf6ull.jpg);
+}
+.thefront{
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+border-radius: 20px;
+background-color: rgb(223, 223, 223);
+background-position: center;
+background-size:cover;
+}
+.theback{
+  position: absolute;
+  width: 100%;
+height: 100%;
+border-radius: 20px;
+backface-visibility: hidden;
+background-color: rgb(223, 223, 223);
+background-position: center;
+background-size: cover;
+transform: rotateY(180deg) rotatez(180deg);
+}
+.theback .imgs{
+width: 80px;
+height: 70px;
+margin-top: 10px;
+}
+.theback button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169,1);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.theback button a{
+  text-decoration: none;
+  color: white;
+}
+.theback button:hover{
+    background-color: rgba(0, 136, 169,0.5);
+  font-size: 17px;
+}
+.png1{
+  width: auto;
+  height: 30px;
+}
+.png{
+  width: auto;
+  height: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+    position: relative;
+    width: 100%;
+ bottom: 0%;
+ justify-content: space-between;
+    padding: 10px 7%;
+    background-color: rgba(12, 131, 161, 0.911);
+}
+.buttons{
+    display: flex;
+    margin-top: 15%;
+}
+.buttons img{
+    width: auto;
+  height: 20px;
+}
+.buttons a{
+  padding-bottom: 1px;
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-top: 3px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.buttons a:hover{
+    background-color: rgba(17, 103, 125, 0.53)
+}
+.conts{
+  display: flex;
+  flex-direction: column;
+}
+.conts h2{
+  font-size: 12px;
+}
+.conts b, dfn{
+  font-size: 11px;
+}
+.copyright{
+  font-weight: bolder;
+margin-top: 1%;
+font-size: 13px;
+}
+footer a{
+  text-decoration: none;
+}
+.logo2{
+margin-left: -50px;
+}
+.pin{
+  padding-left: 20px;
+  margin-top: 5%;
+  justify-content: space-between;
+}
+.pin a{
+  padding-left: 40px;
+  font-weight: 600;
+  justify-content: space-between;
+}
+.opp{
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.odd{
+  display: flex;
+  flex-direction: row;
+}
+.odd1 img{
+  border-radius: 30px;
+margin-left: 3%;
+}
+.odd2 img{
+  border-radius: 30px;
+margin-right: 3%;
+}
+fieldset{
+position: relative;
+  background:#ffffff;
+  padding: 10px 18px;
+  font-weight: bold;
+  display: inline-block;
+  margin:20px 0;
+  border-radius: 5px;
+  color: rgb(107, 14, 150);
+}
+fieldset .in{
+display: flex;
+flex-direction: column;
+}
+::-webkit-input-placeholder{
+  font-weight: bold;
+color: #49444db0;
+}
+.submit{
+background-color: rgba(0, 136, 169,1);
+  text-decoration: none;
+font-size: 15px;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+width: 60%;
+margin-top: 5px;
+  border-radius: 30px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+transition: .3s;
+}
+.submit:hover{
+  background-color: rgb(10, 71, 87);
+  font-size: 17px;
+}
+.input{
+  height: 40px;
+width: 100%;
+border: none;
+outline: none;
+margin-top: 5px;
+border-radius: 10px;
+padding: 5px 5px 5px 10px;
+background: rgba(0, 0, 0, 0.1);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="twmb.png" alt="KING" width="150" height="auto">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Category</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about us.html" class="active">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="contact us.html"><button>Login</button></a>
+    </header>
+    <center>
+        <font color='purple'>
+        <h1><b>TWAMBI MOTORS</b></h1> </font>
+        <br>
+        <br>
+        <h3><font size='+2' color='darkblue'>We offer sophisticated Japanese New and used cars at reasonable prices!</font></h3>
+    </center>
+    <br>
+    <br>
+    <div class="opp">
+      <h4>What is TWAMBI MOTORS?</h4>
+      <br>
+      <div class="odd odd1">
+        <p>Nice to meet you! We are Twambimotors Africa.<br>
+          We are a group company of a listed company in Japan. Our parent company is called Twambimotors<br>
+          Holdings,and we provide the best internet financial services in Japan.The Twambimotors Group has<br>
+           numerous group companies in Japan and overseas,mainly in the financial services business including<br>
+           Twambimotors Securities and Twambimotors Sumishin Net Bank,the leading online financial services<br>
+           companies,the asset management business, and the biotechnology,healthcare and medical informatics<br>
+           business.Twambimotors Africa is one of them.</p>
+            <img src="company.png" style="width: auto; height: 200px;">
+      </div>
+      <br>
+      <h4>Our Mission</h4>
+      <br>
+      <div class="odd odd2">
+        <img src="weg.png" style="width: auto; height: 200px;">
+        <p>Many Japanese used cars are imported to Africa, but not all of them are of high quality.<br>
+           Some of the cars have large dents or engines that fail quickly. However, we want to enrich <br>
+           the lives of people in Africa and contribute to the economic development of the region.</p>
+      </div>
+    </div>
+    <center>
+      <br>
+      <br>
+      <p><font size='+2' color='darkblue'>Meet our team</font></p>
+        <div class="thecard">
+            <div class="thefront card1"></div>
+            <div class="theback">
+              <img src="hash.png"width="auto" height="100" class="imgs"><br>
+              <h3>Twaha kikambi</h3>
+              <p>CEO</p>
+              <div class="pngs">
+              <a href="https://twitter.com/Hashim_kikambi"><img class="png" src="icons/tw.png" ></a>
+              <a href="https://www.facebook.com/kiks.bats/about_overview"><img class="png" src="icons/fb.png" ></a>
+              <a href="https://www.instagram.com/hashim_kikambi/"><img class="png" src="icons/inst.png" ></a>
+              <a href="0741273938"><img class="png" src="icons/wa.png" ></a>
+            </div>
+              <button><a href="tawakal/index.html">Read more</a></button>
+            </div>
+            </div>
+            <div class="thecard">
+                <div class="thefront card2"></div>
+                <div class="theback">
+                  <img src="sumao.png"width="auto" height="100"class="imgs"><br>
+                  <h3>Yonga Sumayia</h3>
+                  <p>DIRECTING MANAGER</p>
+                  <div class="pngs">
+                    <a href="https://twitter.com/Hashim_kikambi"><img class="png" src="icons/tw.png" ></a>
+                    <a href="https://www.facebook.com/kiks.bats/about_overview"><img class="png" src="icons/fb.png" ></a>
+                    <a href="https://www.instagram.com/hashim_kikambi/"><img class="png" src="icons/inst.png" ></a>
+                    <a href="0741273938"><img class="png" src="icons/wa.png" ></a>
+                </div>
+                  <button><a href="tawakal/index.html">Read more</a></button>
+                </div>
+                </div>
+                <div class="thecard">
+                    <div class="thefront card3"></div>
+                    <div class="theback">
+                      <img src="getio.png"width="auto" height="100px"class="imgs"><br>
+                      <h3>Simba Geti</h3>
+                      <p>SUPERVISOR</p>
+                      <div class="pngs">
+                        <a href="https://twitter.com/Hashim_kikambi"><img class="png" src="icons/tw.png" ></a>
+                        <a href="https://www.facebook.com/kiks.bats/about_overview"><img class="png" src="icons/fb.png" ></a>
+                        <a href="https://www.instagram.com/hashim_kikambi/"><img class="png" src="icons/inst.png" ></a>
+                        <a href="0741273938"><img class="png" src="icons/wa.png" ></a>
+                    </div>
+                      <button><a href="tawakal/index.html">Read more</a></button>
+                    </div>
+                    </div>
+                    <div class="thecard">
+                        <div class="thefront card4"></div>
+                        <div class="theback">
+                          <img src="twa.png"width="auto" height="100"class="imgs"><br>
+                          <h3>Japha Ssemakula</h3>
+                          <p>SALES</p>
+                          <div class="pngs">
+                            <a href="https://twitter.com/Hashim_kikambi"><img class="png" src="icons/tw.png" ></a>
+                            <a href="https://www.facebook.com/kiks.bats/about_overview"><img class="png" src="icons/fb.png" ></a>
+                            <a href="https://www.instagram.com/hashim_kikambi/"><img class="png" src="icons/inst.png" ></a>
+                            <a href="0741273938"><img class="png" src="icons/wa.png" ></a>
+                        </div>
+                          <button><a href="tawakal/index.html">Read more</a></button>
+                        </div>
+                        </div>
+    </center>
+<br>
+<center>
+<fieldset>
+  <h3>LEAVE A COMMENT</h3>
+  <div class="in">
+    <input type="text" class="input" placeholder="Name" name="name" >
+    <input type="text" class="input" placeholder="Email" name="email">
+    <input type="text" class="input" placeholder="Comment" name="Comment">
+   </div>
+    <input type="submit" for="click" class="submit" value="Submit">
+</fieldset>
+</center>
+    <br>
+    <br>
+    <footer>
+      <div class="down">
+        <div class="logo2"><img src="logowhite.png" width="100px" height="auto"></div>
+      </div>
+      <hr>
+      <div class="copyright">
+        <p>
+          Copyright © 2013-2022 twambimotors.com All Rights Reserved.
+        </p>
+        <div class="pin">
+          <a>Privacy Policy</a>
+         <a>Terms of use</a>
+         </div>
+      </div>
+      <div class="difs">
+        <div class="buttons">
+          <h3>Follow us:</h3>
+            <a class="cta" href="contact us.html"><img src="icons/tw.png"></a>
+            <a class="cta" href="contact us.html"><img src="icons/fb.png"></a>
+            <a class="cta" href="contact us.html"><img src="icons/g+.png"></a>
+            <a class="cta" href="contact us.html"><img src="icons/inst.png"></a>
+           </div>
+           
+      </div>
+         <center class="conts">
+          <h2>Contact</h2>
+          <p><b>call: </b>
+             <dfn>+256 741 273 938</dfn>
+              <br> <b> whatsapp: </b>
+             <dfn>+256 741 273 938</dfn>
+            </p>
+      </center>
+  </footer>
+</body>
+</html>

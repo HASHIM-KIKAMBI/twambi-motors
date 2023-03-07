@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twambimotors.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(219, 219, 219);
+}
+.top-header label{
+  position: absolute;
+margin-top: -95px;
+margin-left: 130px;
+}
+.png{
+  width: auto;
+  height: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+span{
+  font-size: small;
+display: flex;
+justify-content: center;
+padding: 10px 0 10px 0;
+}
+h3{
+  font-size: 30px;
+display: flex;
+justify-content: center;
+padding: 10px 0 10px;
+}
+.input-field{
+display: flex;
+flex-direction: column;
+}
+.but{
+  display: flex;
+flex-direction: column;
+margin-left: -15px;
+margin-top: -5px;
+}
+.input{
+  height: 45px;
+width: 88%;
+border: none;
+outline: none;
+border-radius: 30px;
+padding: 0 0 0 40px;
+background: rgba(0, 0, 0, 0.1);
+}
+i{
+  position: relative;
+top: -35px;
+left: -135px;
+}
+::-webkit-input-placeholder{
+  font-weight: bold;
+}
+.submit{
+margin-left: 60px;
+background-color: rgba(0, 136, 169,1);
+  text-decoration: none;
+font-size: 15px;
+  font-weight: bold;
+  border: none;
+  height: 45px;
+width: 70%;
+left: 30%;
+  border-radius: 30px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+transition: .3s;
+}
+.submit:hover{
+  background-color: rgba(0, 136, 169,0.5);
+  font-size: 17px;
+}
+.bottom{
+margin-left: 20px;
+margin-right: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+font-size: small;
+color: black;
+margin-top: 10px;
+}
+.left{
+display: flex;
+}
+.right label a{
+color: black;
+text-decoration: none;
+}
+.vab{
+  background:#212121;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(250, 205, 6);
+  display: inline-block;
+  margin:30px 0;
+  border-radius: 5px;
+}
+.png{
+width: 4%;
+height: auto;
+}
+.box{
+  background-color: rgba(155, 165, 176, 0.785);
+  display: flex;
+  border-radius: 30px;
+  margin-left: 36%;
+  margin-right: 36%;
+  margin-bottom: 50%;
+  justify-content: center;
+align-items: center;
+min-height: 15vh;
+}
+.contain{
+  width: 350px;
+  display: flex;
+flex-direction: column;
+padding: 2px 15px 2px 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="twmb.png" alt="KING" width="150" height="auto">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Category</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about us.html" class="active">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="contact us.html"><button>Login</button></a>
+    </header>
+    <center>
+        <font size='+3.7' color='purple'>
+        <a><b>TWAMBI MOTORS</b></a> </font>
+        <p><font size='+2' color='darkblue'>we transform</font></p>
+    </center>
+    <center>
+    <div class="box">
+    <div class="contain">
+      <div class="top-header">
+    <h3>Login</h3>
+    <label for="click" class="fas fa-time">X</label>
+      </div>
+      <form action="login.html"method="GET">
+    <div class="input-field">
+    <input type="text" class="input" placeholder="Email" name="email" required>
+    <i><img src="lock.png" class="png"></i>
+    </div>
+    
+    <div class="input-field fox" >
+      <input type="password" class="input" placeholder="Password" name="password" required>
+      <i><img src="user.png" class="png"></i>
+    </div>
+    
+      <div class="input-field but">
+        <input type="submit" class="submit" value="Login">
+        </div>
+    
+    <div class="bottom">
+    <div class="left">
+      <input type="checkbox" id="check">
+    <label for="check">Remember Me</label>
+    </div>
+    <div class="right">
+    <label><a href="signup.html">Forgot Password?</a></label>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </center>
+    <footer>
+      <div class="copyright">
+        <p><a href="#"><b>Copyright © 2013-2022 twambimotors.com All Rights Reserved.</b></a></p>
+      </div>
+      <div class="buttons">
+          <a class="cta" href="contact us.html"><img src="icons/tw.png"></a>
+          <a class="cta" href="contact us.html"><img src="icons/fb.png"></a>
+          <a class="cta" href="contact us.html"><img src="icons/g+.png"></a>
+         </div>
+         <center class="conts">
+          <h2>Contact</h2>
+          <p><b>call: </b>
+             <dfn>+256 741 273 938 / +256 701 655 849</dfn>
+              <br> <b> whatsapp: </b>
+             <dfn>+256 741 273 938 / +256 701 655 849</dfn>
+      </center>
+      <center class="conts">
+        <h2>Message us</h2>
+          <b> email: </b>
+           <span><b>info@twambimotors.com</b></span>
+            <br> <b>website: </b>
+           <span><b>www.twambimotors.com</b></span>
+    </center>
+  </footer>
+</body>
+</html>
